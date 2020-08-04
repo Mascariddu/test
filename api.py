@@ -10,5 +10,9 @@ class HelloWorld(Resource):
 
 api.add_resource(HelloWorld, '/')
 
+app.add_url_rule(
+    '/skere/', methods=['GET', 'POST']
+)
+
 if __name__ == '__main__':
     app.run(debug=True)
